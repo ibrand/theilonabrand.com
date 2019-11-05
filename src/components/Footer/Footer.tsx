@@ -47,7 +47,7 @@ export const Footer: React.FC<Props> = () => {
           <Text variant="label">Copyright &copy; 2019, Ilona Brand</Text>
         </Box>
         <Box width={[1, 1, 1,1/3]} mb={3} textAlign="right">
-        <StyledLink href="https://github.com/whoisryosuke">
+        <StyledLink href="https://github.com/ibrand">
           <Image src={Github} />
         </StyledLink>
         <StyledLink href="https://instagram.com/theilonabrand">
