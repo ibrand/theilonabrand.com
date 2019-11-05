@@ -36,7 +36,7 @@ const StyledLink = styled.a`
 `
 
 interface Props {
-  
+
 }
 
 export const Footer: React.FC<Props> = () => {
@@ -44,48 +44,18 @@ export const Footer: React.FC<Props> = () => {
     <Box as="footer">
       <StyledFlex justifyContent="space-between" flexWrap="wrap">
         <Box width={[1, 1, 1,1/3]} mb={3}>
-          <Text variant="label">Copyright &copy; 2019, Oscar Diaz</Text>
+          <Text variant="label">Copyright &copy; 2019, Ilona Brand</Text>
         </Box>
-        <Box width={[1, 1, 1, 2 / 3]} textAlign="right">
-          <StyledLink href="https://codepen.io/whoisryosuke">
-            <Image src={CodePen} />
-          </StyledLink>
-
-          <StyledLink href="https://twitch.tv/whoisryosuke">
-            <Image src={Twitch} />
-          </StyledLink>
-
-          {/* <StyledLink href="#comingsoon">
-            <Image src={YouTube} />
-          </StyledLink> */}
-
-          <StyledLink href="https://instagram.com/whoisryosuke">
-            <Image src={Instagram} />
-          </StyledLink>
-
-          <StyledLink href="https://twitter.com/whoisryosuke">
-            <Image src={Twitter} />
-          </StyledLink>
-
-          <StyledLink href="https://linkedin.com/in/stoneddesigner">
-            <Image src={LinkedIn} />
-          </StyledLink>
-
-          <StyledLink href="https://dribbble.com/whoisryosuke">
-            <Image src={Dribbble} />
-          </StyledLink>
-
-          <StyledLink href="https://www.behance.net/whoisryosuke">
-            <Image src={Behance} />
-          </StyledLink>
-
-          <StyledLink href="https://github.com/whoisryosuke">
-            <Image src={Github} />
-          </StyledLink>
-          
-          <StyledLink href="https://storybook.whoisryosuke.com">
-            <Image src={Storybook} />
-          </StyledLink>
+        <Box width={[1, 1, 1,1/3]} mb={3} textAlign="right">
+        <StyledLink href="https://github.com/whoisryosuke">
+          <Image src={Github} />
+        </StyledLink>
+        <StyledLink href="https://instagram.com/theilonabrand">
+          <Image src={Instagram} />
+        </StyledLink>
+        <StyledLink href="https://linkedin.com/in/theilonabrand">
+          <Image src={LinkedIn} />
+        </StyledLink>
         </Box>
       </StyledFlex>
     </Box>

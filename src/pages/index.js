@@ -27,41 +27,14 @@ export default class Frontpage extends Component {
     return (
       <Layout className="Frontpage pt2">
         <GreetingMasthead />
-
-        {/* <ServicesGrid /> */}
-
-        {/*------- Featured image -------*/}
-        <SectionHeading emoji="📓" heading="Latest writings" />
-        <Featured>
-          <BasicCard
-            width={[1, 1, 2 / 3, 1 / 2, 1 / 3]}
-            solid
-            title={blog.edges[0].node.frontmatter.title}
-            subheader={blog.edges[0].node.frontmatter.tags}
-            description={blog.edges[0].node.excerpt}
-            link={blog.edges[0].node.fields.slug}
-          />
-        </Featured>
-
-        {/*------- Posts loop -------*/}
-        <PostLoop type="blog" loop={blog.edges} skip={true} />
-        <Box sx={{ borderBottom: '1px solid black' }} textAlign="right" p={3}>
-          <Link to={'blog'}>
-            <ButtonOutline>Find more reading material</ButtonOutline>
-          </Link>
-        </Box>
-
         {/*------- Projects loop -------*/}
-        <SectionHeading emoji="🎨" heading="Latest projects" />
+        <SectionHeading heading="Projects" />
         <PostLoop type="project" loop={projects.edges} skip={false} />
         <Box sx={{ borderBottom: '1px solid black' }} textAlign="right" p={3}>
           <Link to={'projects'}>
-            <ButtonOutline>See more eye candy</ButtonOutline>
+            <ButtonOutline>More projects</ButtonOutline>
           </Link>
         </Box>
-
-        <Newsletter />
-
         <Contact />
       </Layout>
     )
