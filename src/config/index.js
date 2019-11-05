@@ -1,13 +1,11 @@
 module.exports = {
-  title: 'Ryosuke · Design & Development',
-  description: 'The portfolio and blog of Ryosuke',
+  title: "Ilona Brand's Porfolio",
+  description: "Ilona's work, art and writing",
   keywords:
-    'web designer for hire, designer for hire, ryosuke design, oscar diaz, whoisryosuke, ryosuke hana',
+    'ilona, ilona brand',
   url: 'http://whoisryosuke.com/',
   image: 'http://whoisryosuke.com/assets/favicon/android-chrome-512x512.png',
   logo: 'http://whoisryosuke.com/assets/favicon/android-chrome-512x512.png',
-  twitter: '@whoisryosuke',
-  fbAppID: '',
 
   // This is used for generating blog preview pages in `gatsby-node.js`.
   postsPerPage: 10,
