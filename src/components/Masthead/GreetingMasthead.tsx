@@ -11,36 +11,25 @@ const GreetingMasthead: React.FunctionComponent<IGreetingMastheadProps> = ({clas
   return(
   <section className={className}>
     <Box mb={4}>
-      <Heading variant="label" textAlign="right" mb={2}>はじめまして</Heading>
         <Heading
           fontSize={[3, 4, 7]} textAlign="right">
-          Hey I'm Ryosuke ✌️<br />
-          Designer, developer,<br />
-          &amp; influencer 💭
+          Ilona builds technology that should exist
       </Heading>
     </Box>
     <Box mb={4}>
-      <Heading variant="label" textAlign="right">わたし</Heading>
-        <Heading
-          fontSize={[2, 3, 5]} textAlign="right">
-          full stack engineer<br />
-          UI/UX designer 
+      <Heading variant="label" textAlign="right">roles</Heading>
+      <Heading
+        fontSize={[2, 3, 5]} textAlign="right">
+        full stack software engineer<br />
+        community manager <br/>
+        project manager
       </Heading>
     </Box>
     <Box mb={4}>
-        <Heading
-          fontSize={[2, 3, 5]} textAlign="right" mb={2}>
-          Los Angeles
-      </Heading>
-      <Heading variant="label" textAlign="right">`に住んでいる</Heading>
-    </Box>
-    <Box mb={4}>
-      <Heading variant="label" textAlign="right" mb={2}>I live for </Heading>
+      <Heading variant="label" textAlign="right" mb={2}>In search of</Heading>
         <Heading
           fontSize={[1,2]} textAlign="right">
-          clean design, <br />
-          accessible UX,<br />
-          &amp; cutting-edge tech
+          a gentler future
       </Heading>
     </Box>
   </section>
