@@ -168,6 +168,13 @@ const Header = React.memo(({mobile, visible, toggleVisibility}) => {
       <StyledHeaderNav mobile={mobile} visible={visible}>
         <ul>
           <li>
+            <Link to={'/resources'}>
+              <Text variant="label">
+                Work
+              </Text>
+            </Link>
+          </li>
+          <li>
             <Link to={'/blog'}>
               <Text variant="label">
                 Writing
@@ -176,13 +183,6 @@ const Header = React.memo(({mobile, visible, toggleVisibility}) => {
           </li>
           <li>
             <Link to={'/projects'}>
-              <Text variant="label">
-                Work
-              </Text>
-            </Link>
-          </li>
-          <li>
-            <Link to={'/resources'}>
               <Text variant="label">
                 Sketches & Poems
               </Text>
