@@ -28,13 +28,13 @@ export default class Frontpage extends Component {
       <Layout className="Frontpage pt2">
         <GreetingMasthead />
         {/*------- Projects loop -------*/}
-        <SectionHeading heading="Projects" />
-        <PostLoop type="project" loop={projects.edges} skip={false} />
-        <Box sx={{ borderBottom: '1px solid black' }} textAlign="right" p={3}>
-          <Link to={'projects'}>
-            <ButtonOutline>More projects</ButtonOutline>
-          </Link>
-        </Box>
+        {/*<SectionHeading heading="Projects" />*/}
+        {/*<PostLoop type="project" loop={projects.edges} skip={false} />*/}
+        {/*<Box sx={{ borderBottom: '1px solid black' }} textAlign="right" p={3}>*/}
+        {/*  <Link to={'projects'}>*/}
+        {/*    <ButtonOutline>More projects</ButtonOutline>*/}
+        {/*  </Link>*/}
+        {/*</Box>*/}
       </Layout>
     )
   }

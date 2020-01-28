@@ -20,18 +20,15 @@ const GreetingMasthead: React.FunctionComponent<IGreetingMastheadProps> = ({clas
     <Box mb={4}>
       <Heading
         fontSize={[4, 5, 7]} textAlign="left">
-        Ilona builds
-        technology that
-        should exist
+        Ilona builds technology that should exist
       </Heading>
     </Box>
     <Box mb={4}>
-      <Heading variant="label" textAlign="left" fontSize={[2, 3]}>roles</Heading>
+      <Heading variant="label" textAlign="left" fontSize={[2, 3]}>Current roles</Heading>
       <Heading
         fontSize={[2, 3, 5]} textAlign="left">
-        full stack software engineer<br />
-        community manager <br/>
-        project manager
+        Community Manager of <a href={"https://github.com/MoveOnOrg/Spoke"}>Spoke</a> with MoveOn.org <br />
+        Director of <a href={"https://progressivehacknight.org/"}>Progressive HackNight</a> <br/>
       </Heading>
     </Box>
     <Box mb={4}>
@@ -56,6 +53,10 @@ const StyledGreetingMasthead = styled(GreetingMasthead)`
   background-repeat:no-repeat;
   background-size:100%;
   background-position:0% 40%;
+  
+  a {
+    color: white;
+  }
 `
 //   ${(props) => props.theme.mediaQueries.computer} { }
 export default StyledGreetingMasthead;
