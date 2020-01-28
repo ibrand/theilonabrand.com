@@ -36,7 +36,7 @@ const gradients = {
 
 const fonts = {
   body: 'Roboto, Helvetiva Neue, Helvetica, Aria, sans-serif',
-  heading: 'Poppins, Helvetiva Neue, Helvetica, Aria, sans-serif',
+  heading: 'Amatic SC',
   monospace: 'Menlo, monospace',
 }
 
@@ -148,7 +148,7 @@ const theme = {
       avatar: {
         width: 'avatar',
         height: 'avatar',
-        backgroundSize: 'cover', 
+        backgroundSize: 'cover',
         backgroundPosition:'center',
         marginBottom: "3rem"
       }

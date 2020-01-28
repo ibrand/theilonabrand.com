@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled from "styled-components"
 import { Box, Heading } from 'rebass/styled-components'
-import MastheadSVG from '@assets/svg/masthead-circles.svg'
+import coverImg from '../../assets/img/letsBuildTechnologyThatShouldExistPoster.png';
 
 interface IGreetingMastheadProps {
   className: string
@@ -11,48 +11,43 @@ const GreetingMasthead: React.FunctionComponent<IGreetingMastheadProps> = ({clas
   return(
   <section className={className}>
     <Box mb={4}>
-        <Heading
-          fontSize={[3, 4, 7]} textAlign="right">
-          Ilona builds technology that should exist
+      <Heading
+        fontSize={[4, 5, 7]} textAlign="left">
+        Ilona builds
+        technology that
+        should exist
       </Heading>
     </Box>
     <Box mb={4}>
-      <Heading variant="label" textAlign="right">roles</Heading>
+      <Heading variant="label" textAlign="left" fontSize={[2, 3]}>roles</Heading>
       <Heading
-        fontSize={[2, 3, 5]} textAlign="right">
+        fontSize={[2, 3, 5]} textAlign="left">
         full stack software engineer<br />
         community manager <br/>
         project manager
       </Heading>
     </Box>
     <Box mb={4}>
-      <Heading variant="label" textAlign="right" mb={2}>In search of</Heading>
+      <Heading variant="label" textAlign="left" fontSize={[1, 2]} mb={2}>Based in</Heading>
         <Heading
-          fontSize={[1,2]} textAlign="right">
-          a gentler future
+          fontSize={[2,3]} textAlign="left">
+          New york city
       </Heading>
     </Box>
   </section>
   )
 };
 
-
 const StyledGreetingMasthead = styled(GreetingMasthead)`
   padding:4rem;
+  color: white;
+  font-family: ${(props) => props.theme.fonts.heading};
   border-bottom:1px solid ${(props) => props.theme.colors.black};
 
-  background-image:url(${MastheadSVG});
+  background-image:url(${coverImg});
   background-repeat:no-repeat;
-
-  ${(props) => props.theme.mediaQueries.mobile} {
-    background-size:150%;
-    background-position:30% 30%;
-  }
-
-  ${(props) => props.theme.mediaQueries.tablet} {
-    background-size:75%;
-    background-position:-30% 30%;
-  }
+  background-size:100%;
+  background-position:0% 40%;
 `
-
+//   ${(props) => props.theme.mediaQueries.computer} { }
 export default StyledGreetingMasthead;
