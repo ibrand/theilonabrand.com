@@ -35,7 +35,6 @@ export default class Frontpage extends Component {
             <ButtonOutline>More projects</ButtonOutline>
           </Link>
         </Box>
-        <Contact />
       </Layout>
     )
   }

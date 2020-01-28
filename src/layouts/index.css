@@ -821,7 +821,7 @@ pre tt:after {
   padding:2rem;
 }
 
-.cta.gray 
+.cta.gray
 {
   background-color:#F0F0F0;
 }
@@ -963,7 +963,7 @@ a.Title:hover,
   margin-top:3.5rem;
 }
 
-.Header 
+.Header
 {
   width:100%;
   height:3.5rem;
@@ -997,12 +997,12 @@ a.Title:hover,
   float:right;
 }
 
-.Header .Navigation ul 
+.Header .Navigation ul
 {
   list-style-type:none;
 }
 
-.Header .Navigation li 
+.Header .Navigation li
 {
   display: inline;
   text-transform: uppercase;
@@ -1011,7 +1011,7 @@ a.Title:hover,
 }
 
 .Header .logo,
-.Header .Navigation a 
+.Header .Navigation a
 {
   color:#A0A0A0;
   border-bottom:0;
@@ -1023,13 +1023,13 @@ a .Title:hover,
 a.Title:hover
 {
   color:#005CDD;
-  transition: color 400ms ease-out;  
+  transition: color 400ms ease-out;
 }
 
 .Header .logo svg path
 {
   fill:#A0A0A0;
-  transition: fill 400ms ease-in;  
+  transition: fill 400ms ease-in;
 }
 
 .Header .logo:hover svg path
@@ -1100,13 +1100,13 @@ a.Title:hover
 
 .Featured .Link
 {
-  padding-top:1rem;  
+  padding-top:1rem;
 }
 
 @media (max-width: 800px) {
   .Featured figcaption
   {
-    width: 90%;    
+    width: 90%;
   }
 }
 
@@ -1139,7 +1139,7 @@ a.Title:hover
 
 .Card figure img
 {
-  width:100%; 
+  width:100%;
 }
 
 .Card .content
@@ -1149,7 +1149,7 @@ a.Title:hover
 
 .Card .excerpt
 {
-  margin-top:1rem;  
+  margin-top:1rem;
   margin-bottom:2.5rem;
 }
 
@@ -1193,7 +1193,7 @@ a.Title:hover
   transition: background 400ms ease-in, transform 200ms ease-in;
 }
 
-.TagCloud li a 
+.TagCloud li a
 {
   color:#FFF;
   border-bottom:0;
@@ -1238,7 +1238,7 @@ a.Title:hover
   background-size:cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  animation: 400ms ease-in 0s 1 fadeIn;  
+  animation: 400ms ease-in 0s 1 fadeIn;
 }
 
 
@@ -1258,7 +1258,7 @@ a.Title:hover
 
 .ArticlePage .container
 {
-  animation: 1s ease-out 0s 1 slideUpFade;  
+  animation: 1s ease-out 0s 1 slideUpFade;
 }
 
 .ArticlePage .content
@@ -1273,12 +1273,12 @@ a.Title:hover
 
 .ArticlePage.blog .content
 {
-  margin-top:-10rem;  
+  margin-top:-10rem;
 }
 
 .ArticlePage.project .meta
 {
-  margin-top:12rem;  
+  margin-top:12rem;
   width:15%;
   float:left;
 }
@@ -1295,7 +1295,7 @@ a.Title:hover
   width:80%;
   margin-left:auto;
   margin-right:auto;
-  margin-top:6rem;  
+  margin-top:6rem;
   padding:2rem;
   float:right;
 }
@@ -1340,7 +1340,7 @@ a.Title:hover
   border-radius:4px;
 }
 
-.ArticlePage .share a 
+.ArticlePage .share a
 {
   font-size:0.7rem;
   border:0;
@@ -1354,7 +1354,7 @@ a.Title:hover
   transition:transform 300ms, box-shadow 400ms;
 }
 
-.ArticlePage.project .share a 
+.ArticlePage.project .share a
 {
   width:100%;
   margin-bottom:0.5rem;
@@ -1418,7 +1418,7 @@ a.Title:hover
   {
     width:100%;
   }
-  
+
   .ArticlePage .content
   {
     margin-top:-4rem;
@@ -1457,7 +1457,7 @@ a.Title:hover
 .Newsletter input[type='email']:focus
 {
   top:-0.1rem;
-  box-shadow: 3px 0 2px 3px rgba(0,0,0,0.06);  
+  box-shadow: 3px 0 2px 3px rgba(0,0,0,0.06);
   outline-color: rgba(0,0,0,0.2);
   outline-style: dotted;
   outline-width: 2px;
@@ -1638,7 +1638,7 @@ progress::-moz-progress-bar {
 }
 
 
-.Frontpage__about p 
+.Frontpage__about p
 {
   width:60%;
   margin-left:10%;
@@ -1664,7 +1664,7 @@ progress::-moz-progress-bar {
 /* --- Frontpage Services --- */
 
 
-.Frontpage__services 
+.Frontpage__services
 {
   padding:4rem 0;
 }
@@ -1675,7 +1675,7 @@ progress::-moz-progress-bar {
   margin-bottom:1rem;
 }
 
-.Frontpage__services .services 
+.Frontpage__services .services
 {
   padding:3rem;
 }
@@ -1711,7 +1711,7 @@ progress::-moz-progress-bar {
   vertical-align: bottom;
 }
 
-.underline 
+.underline
 {
   border-bottom:0.1rem solid;
 }
@@ -1728,12 +1728,12 @@ progress::-moz-progress-bar {
     line-height:3.75rem;
   }
 
-  .Frontpage__about 
+  .Frontpage__about
   {
     display:block;
   }
-  
-  .Frontpage__about p 
+
+  .Frontpage__about p
   {
     width:100%;
     margin-left:0;
@@ -1770,12 +1770,12 @@ progress::-moz-progress-bar {
   }
 
   .Frontpage__services,
-  .Frontpage__services .services 
+  .Frontpage__services .services
   {
     padding:1rem;
   }
-  
-  .Frontpage__services .col 
+
+  .Frontpage__services .col
   {
     width:100%;
     max-width:100%;
@@ -1885,7 +1885,7 @@ progress::-moz-progress-bar {
 
 /* -------------- Pagination ---------------- */
 
-.Pagination 
+.Pagination
 {
   margin:2rem auto;
   display: flex;
