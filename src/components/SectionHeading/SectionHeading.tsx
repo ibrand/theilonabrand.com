@@ -22,6 +22,7 @@ const SectionHeading: React.FunctionComponent<ISectionHeadingProps> = ({classNam
 const StyledSectionHeading = styled(SectionHeading)`
   padding:2rem 1rem;
   border-bottom:1px solid ${(props) => props.theme.colors.black};
+  background: ${(props) => props.theme.colors.white};
 
   ${props => props.tall && `
     padding-top:7rem;

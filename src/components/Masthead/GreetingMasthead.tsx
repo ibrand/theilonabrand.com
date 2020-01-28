@@ -7,6 +7,13 @@ interface IGreetingMastheadProps {
   className: string
 }
 
+const StyledBackground = styled.section`
+  background-image: url(${coverImg});
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top right;
+`
+
 const GreetingMasthead: React.FunctionComponent<IGreetingMastheadProps> = ({className}) => {
   return(
   <section className={className}>

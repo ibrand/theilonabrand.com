@@ -5,7 +5,7 @@ import { Flex, Box, Text, Link as RLink } from 'rebass/styled-components'
 
 import capitalizeFirstLetter from '../helpers/uppercase'
 
-import MastheadSVG from '@assets/svg/masthead-circles.svg'
+import coverImg from '../assets/img/letsBuildTechnologyThatShouldExistPoster.png';
 
 import Layout from '../layouts/BaseLayout'
 import SEO from '@components/SEO/SEO';
@@ -30,9 +30,9 @@ const StyledLink = styled(GLink)`
 `
 
 const StyledBackground = styled.section`
-  background-image: url(${MastheadSVG});
+  background-image: url(${coverImg});
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 100%;
   background-position: top right;
 `
 
@@ -72,7 +72,7 @@ const IndexPage = ({ data, pathContext }) => {
     <Layout className="BlogArchive">
       <SEO
         key="seo-resources"
-        title={`${sectionName} Archive - Page ${index}`}
+        title={`${sectionName} - Page ${index}`}
         url={pathPrefix}
       />
       <StyledBackground>
