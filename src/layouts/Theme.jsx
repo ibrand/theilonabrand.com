@@ -15,6 +15,7 @@ import ListItem from '../components/List/ListItem'
 import { CodeBlock } from "../components/CodeBlock/CodeBlock"
 
 const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
   html, body {
     font-family: Arial, Helvetica, sans-serif;
     margin:0;
@@ -41,12 +42,12 @@ const GlobalStyle = createGlobalStyle`
 `
 
 export const UIComponents = {
-  h1: props => <rebass.Heading variant="heading" {...props} />, 
-  h2: props => <rebass.Heading variant="subheader" {...props} />, 
-  h3: props => <rebass.Heading variant="h3" {...props} />, 
-  h4: props => <rebass.Heading variant="h4" {...props} />, 
-  p: props => <rebass.Text as="p" variant="paragraph" {...props} />, 
-  hr: props => <rebass.Box as="hr" variant="hr" {...props} />, 
+  h1: props => <rebass.Heading variant="heading" {...props} />,
+  h2: props => <rebass.Heading variant="subheader" {...props} />,
+  h3: props => <rebass.Heading variant="h3" {...props} />,
+  h4: props => <rebass.Heading variant="h4" {...props} />,
+  p: props => <rebass.Text as="p" variant="paragraph" {...props} />,
+  hr: props => <rebass.Box as="hr" variant="hr" {...props} />,
   ul: List,
   li: ListItem,
   pre: props => <div {...props} />,
