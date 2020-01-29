@@ -8,9 +8,9 @@ const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 const createPaginatedPages = require("gatsby-paginate");
 
-/** 
+/**
  * Custom Webpack config
- * 
+ *
  * Adds aliases for paths (like components)
  * so you don't get lost in relative hell -> '../../../'
  */
@@ -30,7 +30,7 @@ exports.onCreateWebpackConfig = ({ config, actions }) => {
 
 exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
     const { createNodeField } = boundActionCreators
-    
+
     if (node.internal.type === "Mdx") {
         const value = createFilePath({ node, getNode, basePath: `pages` })
         createNodeField({
@@ -48,11 +48,11 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
 
  /**
   * Pagination for all MDX posts
-  * 
-  * @param {string} section 
+  *
+  * @param {string} section
   * @param {string} prefix
-  * @param {*} graphql 
-  * @param {*} createPage 
+  * @param {*} graphql
+  * @param {*} createPage
   */
 async function createMdxPagination(section, prefix, graphql, createPage, reporter) {
     const result = await graphql(`
@@ -68,16 +68,6 @@ async function createMdxPagination(section, prefix, graphql, createPage, reporte
                     frontmatter {
                         title
                         date(formatString: "DD MMMM, YYYY")
-                        cover_image {
-                            publicURL
-                            childImageSharp {
-                                fluid(maxWidth: 1240) {
-                                    base64
-                                    src
-                                    srcSet
-                                }
-                            }
-                        }
                         section
                         tags
                     }
@@ -89,7 +79,16 @@ async function createMdxPagination(section, prefix, graphql, createPage, reporte
         }
       }
     `)
-
+   // cover_image {
+   //   publicURL
+   //   childImageSharp {
+   //     fluid(maxWidth: 1240) {
+   //       base64
+   //       src
+   //       srcSet
+   //     }
+   //   }
+   // }
 
     if (result.errors) {
         reporter.panicOnBuild('🚨  ERROR: Loading "createPages" query')

@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
- 
+
 import Layout from "../layouts/BaseLayout"
 import SectionHeading from '../components/SectionHeading/SectionHeading';
 import DesignResources from '@components/DesignResources/DesignResources';
@@ -63,14 +63,6 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
-            cover_image {
-              publicURL
-              childImageSharp {
-                fluid(maxWidth: 1240) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
             section
           }
           fields {
@@ -112,5 +104,12 @@ export const query = graphql`
     }
   }
 `;
-
+// cover_image {
+//     publicURL
+//     childImageSharp {
+//         fluid(maxWidth: 1240) {
+//         ...GatsbyImageSharpFluid
+//         }
+//     }
+// }
 export default resources

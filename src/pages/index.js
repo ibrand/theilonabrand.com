@@ -19,9 +19,6 @@ export default class Frontpage extends Component {
     const {
       blog,
       projects,
-      PeaceEmoji,
-      ThoughtCloudEmoji,
-      CoffeeEmoji,
     } = data
 
     return (
@@ -42,36 +39,6 @@ export default class Frontpage extends Component {
 
 export const query = graphql`
   query IndexQuery {
-    blog: allMdx(
-      sort: { fields: [frontmatter___date], order: DESC }
-      limit: 3
-      filter: { frontmatter: { section: { eq: "blog" } } }
-    ) {
-      totalCount
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            date
-            tags
-            cover_image {
-              publicURL
-              childImageSharp {
-                fluid(maxWidth: 1240) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            section
-          }
-          fields {
-            slug
-          }
-          excerpt
-        }
-      }
-    }
     projects: allMdx(
       sort: { fields: [frontmatter___date], order: DESC }
       limit: 2
@@ -85,14 +52,6 @@ export const query = graphql`
             title
             date
             tags
-            cover_image {
-              publicURL
-              childImageSharp {
-                fluid(maxWidth: 1240) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
             section
           }
           fields {
@@ -101,30 +60,14 @@ export const query = graphql`
         }
       }
     }
-
-    PeaceEmoji: file(relativePath: { regex: "/peace.png/" }) {
-      ...emojiImageFields
-    }
-    ThoughtCloudEmoji: file(relativePath: { regex: "/thought-cloud.png/" }) {
-      ...emojiImageFields
-    }
-    CoffeeEmoji: file(relativePath: { regex: "/coffee.png/" }) {
-      ...emojiImageFields
-    }
-    RyosukeAvatar: file(relativePath: { regex: "/ryosuke-avatar-128.png/" }) {
-      childImageSharp {
-        fixed(width: 170, height: 170) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-  }
-
-  fragment emojiImageFields on File {
-    childImageSharp {
-      fixed(width: 36, height: 36) {
-        ...GatsbyImageSharpFixed
-      }
-    }
   }
 `
+
+// cover_image {
+//   publicURL
+//   childImageSharp {
+//     fluid(maxWidth: 1240) {
+//     ...GatsbyImageSharpFluid
+//     }
+//   }
+// }

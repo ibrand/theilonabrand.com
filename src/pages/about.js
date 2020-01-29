@@ -45,7 +45,7 @@ export default class Frontpage extends Component {
           flexWrap="wrap"
         >
           <Box as="figure" width={[1, 1, 2 / 3]} minHeight={6} textAlign="center" sx={{backgroundImage:`url(${RyosukePortrait})`, backgroundPosition:'center', backgroundSize:'cover'}} />
-            
+
           <Box width={[1, 1, 1 / 3]}
             px={3}
             py={5}>
@@ -123,14 +123,6 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
-            cover_image {
-              publicURL
-              childImageSharp {
-                fluid(maxWidth: 1240) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
             section
           }
           fields {
@@ -141,3 +133,11 @@ export const query = graphql`
     }
   }
 `
+// cover_image {
+//   publicURL
+//   childImageSharp {
+//     fluid(maxWidth: 1240) {
+//     ...GatsbyImageSharpFluid
+//     }
+//   }
+// }

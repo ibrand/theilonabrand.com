@@ -88,14 +88,6 @@ export const pageQuery = graphql`
             title
             date
             tags
-            cover_image {
-              publicURL
-              childImageSharp {
-                fluid(maxWidth: 1240) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
             section
           }
           fields {
@@ -106,3 +98,11 @@ export const pageQuery = graphql`
     }
   }
 `
+// cover_image {
+//   publicURL
+//   childImageSharp {
+//     fluid(maxWidth: 1240) {
+//     ...GatsbyImageSharpFluid
+//     }
+//   }
+// }
