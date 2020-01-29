@@ -22,9 +22,10 @@ const BaseLayout = ({ children }) => (
       <meta name="msapplication-TileColor" content="#da532c" />
       <meta name="theme-color" content="#ffffff" />
     </Helmet>
-    <MobileHeader />
+    {/*<MobileHeader />*/}
 
-    <Box as="section" pt="4.8rem" className="App">
+    {/*<Box as="section" pt="4.8rem" className="App">*/}
+    <Box as="section" className="App">
       {children}
     </Box>
 

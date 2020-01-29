@@ -10,7 +10,7 @@ interface IGreetingMastheadProps {
 const GreetingMasthead: React.FunctionComponent<IGreetingMastheadProps> = ({className}) => {
   return(
   <section className={className}>
-    <Box mb={4} pb={6}>
+    <Box mb={4} pb={"14rem"}>
       <Heading
         fontSize={[4, 5, 7]} textAlign="left">
         Ilona builds technology that should exist
