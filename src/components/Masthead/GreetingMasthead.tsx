@@ -48,6 +48,7 @@ const StyledGreetingMasthead = styled(GreetingMasthead)`
   
   a {
     color: white;
+    border-bottom: 1px solid white;
   }
 `
 //   ${(props) => props.theme.mediaQueries.computer} { }
