@@ -9,7 +9,7 @@ import Footer from '../components/Footer/Footer'
 import appleTouchIcon from '../../static/assets/favicon/apple-touch-icon.png'
 
 const BaseLayout = ({ children }) => (
-  <div>
+  <div className="site">
     <Helmet>
       <title>{ config.title }</title>
       <meta name="description" content={ config.description } />
@@ -21,9 +21,11 @@ const BaseLayout = ({ children }) => (
     {/*<MobileHeader />*/}
 
     {/*<Box as="section" pt="4.8rem" className="App">*/}
-    <Box as="section" className="App">
-      {children}
-    </Box>
+    {/*<Box as="section" className="App">*/}
+    <div className="site-content">
+        {children}
+    </div>
+    {/*</Box>*/}
 
     <Footer />
   </div>

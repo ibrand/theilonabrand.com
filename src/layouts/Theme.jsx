@@ -21,6 +21,16 @@ const GlobalStyle = createGlobalStyle`
     margin:0;
   }
 
+  .site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  .site-content {
+    flex: 1;
+  }
+
   h1,h2,h3,h4,h5 {
     font-family: ${props => props.theme.fonts.heading};
   }
