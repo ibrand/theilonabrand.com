@@ -7,7 +7,7 @@ import IB from '../../assets/svg/IB.svg'
 const StyledHeader = styled(Flex)`
   width:100%;
   background-color:${(props) => props.theme.colors.white};
-  padding:1rem;
+  padding:0.5rem;
   text-align:right;
   border-bottom:1px solid ${(props) => props.theme.colors.black};
   position:fixed;

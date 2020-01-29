@@ -7,17 +7,10 @@ interface IGreetingMastheadProps {
   className: string
 }
 
-const StyledBackground = styled.section`
-  background-image: url(${coverImg});
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: top right;
-`
-
 const GreetingMasthead: React.FunctionComponent<IGreetingMastheadProps> = ({className}) => {
   return(
   <section className={className}>
-    <Box mb={4}>
+    <Box mb={4} pb={6}>
       <Heading
         fontSize={[4, 5, 7]} textAlign="left">
         Ilona builds technology that should exist
@@ -43,7 +36,6 @@ const GreetingMasthead: React.FunctionComponent<IGreetingMastheadProps> = ({clas
 };
 
 const StyledGreetingMasthead = styled(GreetingMasthead)`
-  height:auto;
   padding:4rem;
   color: white;
   font-family: ${(props) => props.theme.fonts.heading};
@@ -52,7 +44,7 @@ const StyledGreetingMasthead = styled(GreetingMasthead)`
   background-image:url(${coverImg});
   background-repeat:no-repeat;
   background-size:100%;
-  background-position:0% 40%;
+  background-position:0% 46%;
   
   a {
     color: white;
