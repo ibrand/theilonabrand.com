@@ -40,7 +40,7 @@ const StyledGreetingMasthead = styled(GreetingMasthead)`
   color: white;
   font-family: ${(props) => props.theme.fonts.heading};
   border-bottom:1px solid ${(props) => props.theme.colors.black};
-  height:100%;
+  height:93vh;
   box-sizing: border-box;
 
   background-image:url(${coverImg});

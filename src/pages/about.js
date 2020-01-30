@@ -12,7 +12,7 @@ import PostLoop from '../components/PostLoop/PostLoop'
 import Contact from '../components/Contact/Contact'
 
 import BombEmoji from '../assets/img/emoji/bomb.png'
-import RyosukePortrait from '../assets/img/self-portrait-blue-w-text.jpg'
+import IlonaPortrait from '../assets/img/ilona.jpg'
 
 const Highlight = styled.span`
   color: ${props => props.theme.colors.primary};
@@ -32,78 +32,41 @@ export default class Frontpage extends Component {
           url="about"
         />
         <Box px={3} py={5} sx={{ borderBottom: '1px solid black' }}>
-          <Heading fontSize={[1, 2, 3]}>
-            Ryosuke meaning <Highlight>clear</Highlight> mediation.
-          </Heading>
           <Heading fontSize={[4, 5, 6]}>
-            The artist formerly known as <Highlight>Oscar</Highlight>{' '}
-            <Image src={BombEmoji} alt="Bomb emoji" width="40px" />
+            Ilona Builds Technology that Should Exist
+          </Heading>
+          <Heading fontSize={[1, 2, 3]}>
+            In search of a Gentler Future.
           </Heading>
         </Box>
         <Flex
           sx={{ borderBottom: '1px solid black' }}
           flexWrap="wrap"
         >
-          <Box as="figure" width={[1, 1, 2 / 3]} minHeight={6} textAlign="center" sx={{backgroundImage:`url(${RyosukePortrait})`, backgroundPosition:'center', backgroundSize:'cover'}} />
+          <Box as="figure" width={[1, 1, 1 / 3]} textAlign="center" sx={{backgroundImage:`url(${IlonaPortrait})`, backgroundPosition:'center', backgroundSize:'cover'}} />
 
-          <Box width={[1, 1, 1 / 3]}
+          <Box width={[1, 1, 2 / 3]}
             px={3}
             py={5}>
-            <Text variant="paragraph" px={5} mt={4} mb={4}>
-              I've been working as a designer and developer for{' '}
-              <strong>over 15 years now</strong>, with over a decade of
-              experience in the cannabis industry.
+            <Text variant="paragraph" px={[1.7,1.7,4]} mt={4} mb={4}>
+              I freelance and contract as a tech worker occupying cross functional roles in software engineering, management and organizing.
+              Most of my work is in science, art, politics, and the progressive grassroots world aligning with a mission
+              to create technology that empowers communities and inspires individuals.
             </Text>
-            <Text variant="paragraph" px={5}>
-              From engineering <a href="http://kushy.net">web apps</a> and
-              e-commerce solutions, to designing brands and products, to
-              producing innovative digital media, and even creating{' '}
-              <strong>
-                famous{' '}
-                <a href="http://weedporndaily.tumblr.com/tagged/gif">
-                  ganja related GIFs
-                </a>
-              </strong>{' '}
-              -- my experience as an <strong>entrepreneur</strong> has broadened
-              my skillset substantially.
+            <Text variant="paragraph" px={[1.7,1.7,4]}>
+              I also write poetry, make music, and occasionally create a visual piece. My academic background is in film,
+              and I attended The School for Poetic Computation where I learned about the intersections of art and technology.
             </Text>
           </Box>
         </Flex>
 
-        <Skills />
+        {/*<Skills />*/}
 
         {/*------- Featured image -------*/}
-        <SectionHeading emoji="🚀" heading="My recent work" tall />
+        <SectionHeading heading="Recent work" tall />
         {/*------- Posts loop -------*/}
         <PostLoop loop={data.projects.edges} skip={skip} />
-
-        {/*------- Speaking / Workshops -------*/}
-        <SectionHeading emoji="🎓" heading="Speaking and Workshops" tall />
-        <Box
-          as="section"
-          px={3}
-          py={5}
-          className="Speaking"
-          sx={{ borderBottom: '1px solid black' }}
-        >
-          <Text px={5}>
-            I’m available for speaking gigs,{' '}
-            <a href="mailto:ryosuke.san.hana@gmail.com">contact me anytime</a>.
-            I love to speak about my experiences with full-stack development,
-            entrepreneurship, or design and branding.
-          </Text>
-          {/* <h3 className="Title text blue">Upcoming Speaking Engagements</h3>
-                    <ul>
-                        <li>
-                            <a href="#">Gig</a>
-                        </li>
-                    </ul> */}
-          {/* <h3 className="Title text blue">Previous Speaking Engagements</h3> */}
-        </Box>
-
-        <Newsletter />
-
-        <Contact />
+        {/*<Newsletter />*/}
       </Layout>
     )
   }

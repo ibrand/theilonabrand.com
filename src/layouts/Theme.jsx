@@ -24,9 +24,9 @@ const GlobalStyle = createGlobalStyle`
   .site {
     min-height: 100vh;
   }
-
+  
   .site-content {
-    height: 93vh;
+    min-height: 93vh;
   }
   
   .footer {
