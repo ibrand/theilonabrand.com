@@ -22,13 +22,15 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .site {
-    display: flex;
     min-height: 100vh;
-    flex-direction: column;
   }
 
   .site-content {
-    flex: 1;
+    height: 93vh;
+  }
+  
+  .footer {
+    height: 7vh;
   }
 
   h1,h2,h3,h4,h5 {

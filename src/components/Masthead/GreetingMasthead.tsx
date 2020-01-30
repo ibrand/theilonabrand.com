@@ -10,7 +10,7 @@ interface IGreetingMastheadProps {
 const GreetingMasthead: React.FunctionComponent<IGreetingMastheadProps> = ({className}) => {
   return(
   <section className={className}>
-    <Box mb={4} pb={"14rem"}>
+    <Box mb={4} pb={[2, 2, 4]}>
       <Heading
         fontSize={[4, 5, 7]} textAlign="left">
         Ilona builds technology that should exist
@@ -40,6 +40,8 @@ const StyledGreetingMasthead = styled(GreetingMasthead)`
   color: white;
   font-family: ${(props) => props.theme.fonts.heading};
   border-bottom:1px solid ${(props) => props.theme.colors.black};
+  height:100%;
+  box-sizing: border-box;
 
   background-image:url(${coverImg});
   background-repeat:no-repeat;
@@ -50,6 +52,10 @@ const StyledGreetingMasthead = styled(GreetingMasthead)`
   a {
     color: white;
     border-bottom: 1px solid white;
+  }
+  
+  ${(props) => props.theme.mediaQueries.mobile} {
+    padding:3rem;
   }
 `
 //   ${(props) => props.theme.mediaQueries.computer} { }
