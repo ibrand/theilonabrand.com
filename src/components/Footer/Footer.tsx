@@ -39,6 +39,7 @@ export const Footer: React.FC<Props> = () => {
       <StyledFlex justifyContent="space-between" flexWrap="wrap">
         <Box width={[1, 1, 1/2, 1/2]} mb={3}>
           <Text variant="label">Copyright &copy; 2020, Ilona Brand</Text>
+          <Text variant="label">Background art by <a href={"https://www.instagram.com/backbeyonds/"}>@backbeyonds</a></Text>
         </Box>
         <Box width={[1, 1, 1/2, 1/2]} mb={3}>
         <StyledLink href="https://github.com/ibrand">
