@@ -45,6 +45,7 @@ const StyledGreetingMasthead = styled(GreetingMasthead)`
   background-repeat:no-repeat;
   background-size:100%;
   background-position:0% 46%;
+  background-size: cover;
   
   a {
     color: white;
