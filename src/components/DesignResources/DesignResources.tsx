@@ -21,7 +21,7 @@ export const DesignResources: React.FC<Props> = ({ resources }) => {
 
   return (
     <section className="DesignResources">
-      <Flex flexWrap="wrap" bg="muted" mt={5} bt={1}>
+      <Flex flexWrap="wrap" bg="muted">
         {repos.map(resource =>
         <ImageCard
           width={[1,1,1/2,1/3]}

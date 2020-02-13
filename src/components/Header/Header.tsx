@@ -10,7 +10,6 @@ const StyledHeader = styled(Flex)`
   padding:0.5rem;
   text-align:right;
   border-bottom:1px solid ${(props) => props.theme.colors.black};
-  position:fixed;
   top:0;
   left:0;
   z-index: 710;
