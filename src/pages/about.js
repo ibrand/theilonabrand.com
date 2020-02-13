@@ -59,14 +59,6 @@ export default class Frontpage extends Component {
             </Text>
           </Box>
         </Flex>
-
-        {/*<Skills />*/}
-
-        {/*------- Featured image -------*/}
-        <SectionHeading heading="Recent work" tall />
-        {/*------- Posts loop -------*/}
-        <PostLoop loop={data.projects.edges} skip={skip} />
-        {/*<Newsletter />*/}
       </Layout>
     )
   }
