@@ -1,0 +1,29 @@
+{
+  "resources": {
+    "design": [{
+        "name": "End Institutional Bullying Campaign Website",
+        "link": "https://endallbullying.org",
+        "liveLink": "https://endallbullying.org",
+        "sourceLink": "https://github.com/ibrand/Institutional-Bullying",
+        "description": "A website built for DRUM's end institutional bullying campaign in schools",
+        "category": "Fullstack development",
+        "image": "endallbullying.png",
+        "client": "DRUM"
+      },
+      {
+        "name": "Morphobank",
+        "link": "https://morphobank.org/",
+        "description": "I worked for almost a year part time helping maintain a web app that presented a database for morphologists to share papers, data, and taxonomize specimens and taxa",
+        "category": "Fullstack development",
+        "image": "morphobank.png"
+      },
+      {
+        "name": "Spoke Community Manager",
+        "link": "https://github.com/MoveOnOrg/Spoke",
+        "description": "Spoke is an open-source peer-to-peer SMS tool used by the Progressive Movement for outreach. Community management is a mixed bag of project management, community organizing, and engineering management",
+        "category": "Community Management",
+        "image": "spokeLogo.png"
+      }
+    ]
+  }
+}

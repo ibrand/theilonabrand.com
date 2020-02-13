@@ -19,7 +19,7 @@ const BaseLayout = ({ children }) => (
           <meta name="theme-color" content="#ffffff" />
         </Helmet>
         <div className="site">
-            {/*<MobileHeader />*/}
+            <MobileHeader />
 
             {/*<Box as="section" pt="4.8rem" className="App">*/}
             {/*<Box as="section" className="App">*/}

@@ -18,18 +18,19 @@ export const DesignResources: React.FC<Props> = ({ resources }) => {
   } else {
     repos = []
   }
-  
+
   return (
     <section className="DesignResources">
-      <Flex flexWrap="wrap" bg="muted">
-        {repos.map(resource => 
-        <ImageCard 
-          width={[1,1/2,1/2,1/3]} 
-          title={resource.name} 
-          subheader={resource.category} 
+      <Flex flexWrap="wrap" bg="muted" mt={5} bt={1}>
+        {repos.map(resource =>
+        <ImageCard
+          width={[1,1,1/2,1/3]}
+          title={resource.name}
+          subheader={resource.category}
           image={`/resources/img/${resource.image}`}
-          href={resource.link}
+          href={resource.link || resource.liveLink}
           cols={3}
+          client={resource.client || ''}
         />
         )}
       </Flex>
