@@ -5,7 +5,7 @@ import { Flex, Box, Text, Link as RLink } from 'rebass/styled-components'
 
 import capitalizeFirstLetter from '../helpers/uppercase'
 
-import coverImg from '../assets/img/letsBuildTechnologyThatShouldExistPoster.png';
+import coverImg from '../assets/img/letsBuildTechnologyThatShouldExistPoster.jpg';
 
 import Layout from '../layouts/BaseLayout'
 import SEO from '@components/SEO/SEO';
