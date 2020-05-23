@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled from "styled-components"
 import { Box, Heading } from 'rebass/styled-components'
-import coverImg from '../../assets/img/letsBuildTechnologyThatShouldExistPoster.png';
+import coverImg from '../../assets/img/letsBuildTechnologyThatShouldExistPoster.jpg';
 
 interface IGreetingMastheadProps {
   className: string
@@ -17,17 +17,17 @@ const GreetingMasthead: React.FunctionComponent<IGreetingMastheadProps> = ({clas
       </Heading>
     </Box>
     <Box mb={4}>
-      <Heading variant="label" textAlign="left" fontSize={[2, 3]}>Current roles</Heading>
+      <Heading variant="header" textAlign="left" fontSize={[4, 5, 6]}>Current roles</Heading>
       <Heading
-        fontSize={[2, 3, 5]} textAlign="left">
+        fontSize={[2, 4, 5]} textAlign="left" variant="header">
         Community Manager of <a href={"https://github.com/MoveOnOrg/Spoke"}>Spoke</a> with MoveOn.org <br />
         Director of <a href={"https://progressivehacknight.org/"}>Progressive HackNight</a> <br/>
       </Heading>
     </Box>
     <Box mb={4}>
-      <Heading variant="label" textAlign="left" fontSize={[1, 2]} mb={2}>Based in</Heading>
+      <Heading variant="header" textAlign="left" fontSize={[3, 4]} mb={2}>Based in</Heading>
         <Heading
-          fontSize={[2,3]} textAlign="left">
+          fontSize={[3, 3, 5]} textAlign="left" variant="header">
           New york city
       </Heading>
     </Box>
@@ -35,10 +35,10 @@ const GreetingMasthead: React.FunctionComponent<IGreetingMastheadProps> = ({clas
   )
 };
 
+// font-family: ${(props) => props.theme.fonts.heading};
 const StyledGreetingMasthead = styled(GreetingMasthead)`
   padding:4rem;
   color: white;
-  font-family: ${(props) => props.theme.fonts.heading};
   border-bottom:1px solid ${(props) => props.theme.colors.black};
   height:93vh;
   box-sizing: border-box;
@@ -55,7 +55,7 @@ const StyledGreetingMasthead = styled(GreetingMasthead)`
   }
   
   ${(props) => props.theme.mediaQueries.mobile} {
-    padding:3rem;
+    padding:2.5rem;
   }
 `
 //   ${(props) => props.theme.mediaQueries.computer} { }
