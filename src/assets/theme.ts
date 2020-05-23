@@ -35,7 +35,7 @@ const gradients = {
 }
 
 const fonts = {
-  body: 'Roboto, Helvetiva Neue, Helvetica, Aria, sans-serif',
+  body: 'Oswald, sans-serif',
   heading: 'Amatic SC',
   monospace: 'Menlo, monospace',
 }

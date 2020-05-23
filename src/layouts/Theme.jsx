@@ -16,8 +16,9 @@ import { CodeBlock } from "../components/CodeBlock/CodeBlock"
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
   html, body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Oswald, sans-serif;
     margin:0;
   }
 
@@ -33,8 +34,12 @@ const GlobalStyle = createGlobalStyle`
     height: 7vh;
   }
 
-  h1,h2,h3,h4,h5 {
+  h1,h2 {
     font-family: ${props => props.theme.fonts.heading};
+  }
+  
+  h3,h4,h5 {
+    font-family: ${props => props.theme.fonts.body};
   }
   
   a {
