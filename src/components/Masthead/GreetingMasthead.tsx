@@ -36,10 +36,10 @@ const GreetingMasthead: React.FunctionComponent<IGreetingMastheadProps> = ({clas
 };
 
 const StyledGreetingMasthead = styled(GreetingMasthead)`
-  padding:4rem;
   color: white;
   border-bottom:1px solid ${(props) => props.theme.colors.black};
-  min-height: calc(100vh - 80px - 80px); // fullscreen minus the header and footer heights
+  min-height: calc(100vh - 80px); // fullscreen minus the footer height
+  margin-top: -80px; // to give a seamless header
   box-sizing: border-box;
 
   background-image:url(${coverImg});
@@ -54,8 +54,7 @@ const StyledGreetingMasthead = styled(GreetingMasthead)`
   }
   
   ${(props) => props.theme.mediaQueries.mobile} {
-    padding:2.5rem;
+    padding: 6em 2.5em 2.5em 2.5em;
   }
 `
-//   ${(props) => props.theme.mediaQueries.computer} { }
 export default StyledGreetingMasthead;
