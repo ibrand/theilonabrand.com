@@ -18,16 +18,9 @@ const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
   html, body {
-    font-family: "Oswald, sans-serif";
+    font-family: ${props => props.theme.fonts.body};
     margin:0;
-  }
-  
-  * {
-    margin: 0;
-  }
-  
-  html, body {
-    height: 100%
+    height: 100%;
     background: ${props => props.theme.colors.deepBlue};
   }
   
@@ -37,11 +30,11 @@ const GlobalStyle = createGlobalStyle`
  }
 
   h1 {
-    font-family: "Amatic SC";
+    font-family: ${props => props.theme.fonts.heading};
   }
   
-  h2,h3,h4,h5 {
-    font-family: "Oswald, sans-serif";
+  p,h2,h3,h4,h5 {
+    font-family: ${props => props.theme.fonts.body};
   }
   
   a {

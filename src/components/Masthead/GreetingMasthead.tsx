@@ -35,7 +35,6 @@ const GreetingMasthead: React.FunctionComponent<IGreetingMastheadProps> = ({clas
   )
 };
 
-// font-family: ${(props) => props.theme.fonts.heading};
 const StyledGreetingMasthead = styled(GreetingMasthead)`
   padding:4rem;
   color: white;
