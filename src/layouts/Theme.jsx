@@ -28,10 +28,12 @@ const GlobalStyle = createGlobalStyle`
   
   html, body {
     height: 100%
+    background: ${props => props.theme.colors.deepBlue};
   }
   
   .site-content {
     min-height: calc(100vh - 80px); // minus footer height
+    background: white;
  }
 
   h1 {
