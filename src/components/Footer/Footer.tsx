@@ -6,6 +6,19 @@ import Instagram from "@assets/svg/social-instagram.svg"
 import LinkedIn from "@assets/svg/social-linkedin.svg"
 import Github from "@assets/svg/social-github.svg"
 
+const StyledFooter = styled.footer`
+  background: #171E65;
+  color: white;
+  
+  a {
+    color: white;
+  }
+  
+  a:hover {
+    border-color: #F2995C;
+  }
+`;
+
 const StyledFlex = styled(Flex)`
   padding:2rem 4rem;
   height: 20px;
@@ -35,6 +48,7 @@ interface Props {
 
 export const Footer: React.FC<Props> = () => {
   return (
+      <StyledFooter>
     <Box as="footer">
       <StyledFlex justifyContent="space-between" flexWrap="wrap">
         <Box width={[1, 1, 1/2, 1/2]} mb={3}>
@@ -54,7 +68,7 @@ export const Footer: React.FC<Props> = () => {
         </Box>
       </StyledFlex>
     </Box>
+      </StyledFooter>
   )
 }
-
 export default Footer

@@ -21,18 +21,18 @@ const GlobalStyle = createGlobalStyle`
     font-family: "Oswald, sans-serif";
     margin:0;
   }
-
-  .site {
-    min-height: 100vh;
+  
+  * {
+    margin: 0;
+  }
+  
+  html, body {
+    height: 100%
   }
   
   .site-content {
-    min-height: 93vh;
-  }
-  
-  .footer {
-    height: 7vh;
-  }
+    min-height: calc(100vh - 80px); // minus footer height
+ }
 
   h1 {
     font-family: "Amatic SC";

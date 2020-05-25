@@ -6,6 +6,7 @@ import IB from '../../assets/svg/IB.svg'
 
 const StyledHeader = styled(Flex)`
   width:100%;
+  height: 80px;
   background-color:${(props) => props.theme.colors.white};
   padding:0.5rem;
   text-align:right;
@@ -124,7 +125,8 @@ const StyledHeaderNav = styled.nav`
       border-bottom:1px solid ${props.theme.colors.black};
 
       & a {
-        padding:4em 1em;
+        padding:2em 1em;
+        font-size: 3em;
         transition:color 300ms ease-out;
 
         & span {
@@ -168,9 +170,7 @@ const Header = React.memo(({mobile, visible, toggleVisibility}) => {
         <ul>
           <li>
             <Link to={'/work'}>
-              <Text variant="label">
-                Work
-              </Text>
+                <p>Work</p>
             </Link>
           </li>
           {/*<li>*/}
@@ -189,9 +189,9 @@ const Header = React.memo(({mobile, visible, toggleVisibility}) => {
           {/*</li>*/}
           <li>
             <Link to={'/about'}>
-              <Text variant="label">
+              <p>
                 About
-              </Text>
+              </p>
             </Link>
           </li>
         </ul>

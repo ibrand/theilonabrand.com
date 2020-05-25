@@ -40,7 +40,7 @@ const StyledGreetingMasthead = styled(GreetingMasthead)`
   padding:4rem;
   color: white;
   border-bottom:1px solid ${(props) => props.theme.colors.black};
-  height:93vh;
+  min-height: calc(100vh - 80px - 80px); // fullscreen minus the header and footer heights
   box-sizing: border-box;
 
   background-image:url(${coverImg});
