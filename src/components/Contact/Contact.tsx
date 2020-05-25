@@ -4,8 +4,6 @@ import { Heading, Flex, Button, Box } from 'rebass/styled-components'
 import { Label, Input, Select } from '@rebass/forms'
 import ButtonOutline from '../Button/ButtonOutline'
 
-import ContactSVG from '../../assets/svg/contact-circles.svg'
-
 const StyledLabel = styled(Label)`
   font-family:${(props) => props.theme.fonts.heading};
 `
@@ -20,7 +18,6 @@ const SectionBox = styled(Box)`
   padding:3rem 0;
 
 
-  background-image:url(${ContactSVG});
   background-repeat:no-repeat;
 
   ${(props) => props.theme.mediaQueries.mobile} {
@@ -35,7 +32,7 @@ const SectionBox = styled(Box)`
 `
 
 interface Props {
-  
+
 }
 
 export const Contact: React.FC<Props> = () => {
