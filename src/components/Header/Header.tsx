@@ -16,6 +16,12 @@ const StyledHeader = styled(Flex)`
   z-index: 710;
   display: flex;
   align-items: center;
+  
+  transition: transform ${(props) => props.theme.animation.default};
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
   & .logo {
     border:0;
@@ -30,11 +36,6 @@ const StyledHeader = styled(Flex)`
     & svg {
       cursor: pointer;
       -webkit-tap-highlight-color: transparent;
-      transition: transform ${(props) => props.theme.animation.default};
-      -moz-user-select: none;
-      -webkit-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
     }
     
     & .line {
@@ -76,7 +77,8 @@ const StyledHeaderNav = styled.nav`
       & span {
         display:none;
       }
-
+    }
+  
       &:after {
         content:'';
         width:100%;
@@ -89,15 +91,13 @@ const StyledHeaderNav = styled.nav`
         border:1px solid ${(props) => props.theme.colors.black};
         transform-origin: 0 50%;
         transform: translate(-1.25em, -0.75em) scaleX(0);
-        z-index: -1; 
+        z-index: -1;
         transition:transform 300ms ease-out;
       }
 
       &:hover:after {
         transform: translate(-1.25em, -0.75em) scaleX(1);
       }
-    }
-  }
 
   ${props => props.mobile && `
     transform:translateX(${props.visible ? '0' : '-120%'});
@@ -162,7 +162,13 @@ const StyledHeaderNav = styled.nav`
   `}
 `
 
-const Header = React.memo(({mobile, visible, toggleVisibility}) => {
+interface Props {
+    mobile: boolean,
+    visible: boolean,
+    toggleVisibility: boolean
+}
+
+const Header: React.FC<Props> = ({mobile, visible, toggleVisibility}) => {
 
   return(
     <StyledHeader justifyContent="flex-end">
@@ -170,28 +176,12 @@ const Header = React.memo(({mobile, visible, toggleVisibility}) => {
         <ul>
           <li>
             <Link to={'/work'}>
-                <p>Work</p>
+                Work
             </Link>
           </li>
-          {/*<li>*/}
-          {/*  <Link to={'/blog'}>*/}
-          {/*    <Text variant="label">*/}
-          {/*      Writing*/}
-          {/*    </Text>*/}
-          {/*  </Link>*/}
-          {/*</li>*/}
-          {/*<li>*/}
-          {/*  <Link to={'/projects'}>*/}
-          {/*    <Text variant="label">*/}
-          {/*      Sketches & Poems*/}
-          {/*    </Text>*/}
-          {/*  </Link>*/}
-          {/*</li>*/}
           <li>
             <Link to={'/about'}>
-              <p>
                 About
-              </p>
             </Link>
           </li>
         </ul>
@@ -219,6 +209,6 @@ const Header = React.memo(({mobile, visible, toggleVisibility}) => {
     </StyledHeader>
   )
 
-})
+}
 
 export default Header
