@@ -16,13 +16,12 @@ const StyledFooter = styled.footer`
 `;
 
 const StyledFlex = styled(Flex)`
-  padding:1.5em 4em;
-
   ${(props) => props.theme.mediaQueries.mobile} {
     padding:0.8em 2.5em;
     text-align:center;
   }
   ${(props) => props.theme.mediaQueries.tablet} {
+    padding:1.5em 4em;
     text-align:center;
   }
 `
@@ -41,6 +40,7 @@ const StyledIconLink = styled.a`
  
   ${(props) => props.theme.mediaQueries.tablet} {
     img {
+      margin-top: 0px;
       height: 30px;
       width: 30px;
     }
