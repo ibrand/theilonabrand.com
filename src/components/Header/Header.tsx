@@ -16,7 +16,7 @@ const StyledHeader = styled(Flex)`
   display: flex;
   
   background-image:url(${coverImg});
-  background-position:0% 10%;
+  background-position:0% 13%;
   background-size: cover;
   
   a {
