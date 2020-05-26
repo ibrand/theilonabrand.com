@@ -3,19 +3,29 @@ import styled from 'styled-components'
 import Link from 'gatsby-link'
 import { Box, Flex, Text, Image } from 'rebass/styled-components'
 import IB from '../../assets/svg/IB.svg'
+import coverImg from '../../assets/img/letsBuildTechnologyThatShouldExistPoster.jpg';
 
 const StyledHeader = styled(Flex)`
   width:100%;
   height: 80px;
-  background-color:${(props) => props.theme.colors.white};
-  padding:0.5rem;
+  padding:0.5em 2.5em;
   text-align:right;
-  border-bottom:1px solid ${(props) => props.theme.colors.black};
   top:0;
   left:0;
   z-index: 710;
   display: flex;
-  align-items: center;
+  
+  background-image:url(${coverImg});
+  background-position:0% 10%;
+  background-size: cover;
+  
+  a {
+    color: white;
+  }
+  
+  ul {
+    padding: 0px;
+  }
   
   transition: transform ${(props) => props.theme.animation.default};
   -moz-user-select: none;
@@ -27,12 +37,10 @@ const StyledHeader = styled(Flex)`
     border:0;
     display:inline-block;
     position:relative;
-    width: 60px;
+    width: 50px;
   }
 
   & .MobileButton {
-    margin-right:2em;
-    
     & svg {
       cursor: pointer;
       -webkit-tap-highlight-color: transparent;
@@ -40,7 +48,7 @@ const StyledHeader = styled(Flex)`
     
     & .line {
       fill:none;
-      stroke:#000;
+      stroke:#fff;
       stroke-width:5.5;
       stroke-linecap:round;
     }
@@ -68,7 +76,7 @@ const StyledHeaderNav = styled.nav`
     margin-right:2.25em;
 
     & a {
-      color: ${(props) => props.theme.colors.black};
+      color: white;
       text-decoration:none;
       border:0;
       position:relative;
@@ -101,6 +109,7 @@ const StyledHeaderNav = styled.nav`
 
   ${props => props.mobile && `
     transform:translateX(${props.visible ? '0' : '-120%'});
+    color: black;
     position:fixed;
     width:100%;
     height:100vh;
@@ -171,7 +180,10 @@ interface Props {
 const Header: React.FC<Props> = ({mobile, visible, toggleVisibility}) => {
 
   return(
-    <StyledHeader justifyContent="flex-end">
+    <StyledHeader justifyContent="space-between">
+      <Link to={'/'} className="logo">
+          <Image src={IB} />
+      </Link>
       <StyledHeaderNav mobile={mobile} visible={visible}>
         <ul>
           <li>
@@ -202,10 +214,6 @@ const Header: React.FC<Props> = ({mobile, visible, toggleVisibility}) => {
           </svg>
         </Box>
       }
-
-      <Link to={'/'} className="logo">
-        <Image src={IB} />
-      </Link>
     </StyledHeader>
   )
 
