@@ -66,11 +66,14 @@ const StyledHeader = styled(Flex)`
 `
 
 const StyledHeaderNav = styled.nav`
-  display: flex;
+  display: inline-block;
   margin-right:1em;
-  align-items: center;
+  
+  & ul {
+    margin-top: 1em;
+  }
 
-  & li { 
+  & li {
     list-style-type:none;
     display:inline-block;
     margin-right:2.25em;
@@ -85,7 +88,6 @@ const StyledHeaderNav = styled.nav`
       & span {
         display:none;
       }
-    }
   
       &:after {
         content:'';
@@ -106,19 +108,19 @@ const StyledHeaderNav = styled.nav`
       &:hover:after {
         transform: translate(-1.25em, -0.75em) scaleX(1);
       }
+     }
+   }
 
   ${props => props.mobile && `
     transform:translateX(${props.visible ? '0' : '-120%'});
-    color: black;
     position:fixed;
     width:100%;
     height:100vh;
-    top:4.9rem;
-    border-top:1px solid ${props.theme.colors.black};
+    top:4.9em;
+    border-top:1px solid black;
     left:0;
     z-index:420;
-    background:${props.theme.colors.white};
-    display: block;
+    background:white;
 
     transition:transform 300ms ease-in;
 
@@ -131,11 +133,20 @@ const StyledHeaderNav = styled.nav`
     & li { 
       width:100%;
       display:block;
-      border-bottom:1px solid ${props.theme.colors.black};
-
+      border-bottom:1px solid black;
+      
+      &.toggle {
+        display: flex;
+        justify-content: flex-end;
+        
+        & span {
+          padding: 4em 1em;
+          text-align: right;
+        }
+      }
       & a {
-        padding:2em 1em;
-        font-size: 3em;
+        color: black;
+        padding:4em 1em;
         transition:color 300ms ease-out;
 
         & span {
@@ -143,10 +154,7 @@ const StyledHeaderNav = styled.nav`
           display:inline-block;
         }
 
-        &:hover, &:focus {
-          color:${props.theme.colors.white};
-        }
-
+        // animation streak across the mobile menu
         &:after {
           content:'';
           width:100%;
@@ -155,12 +163,16 @@ const StyledHeaderNav = styled.nav`
           position:absolute;
           top: 0;
           left: 0;
-          background:${props.theme.colors.primary};
+          background:${props.theme.colors.deepBlue};
           border:0;
           transform-origin: 0 50%;
           transform: translate(-1.25em, 0) scaleX(0);
           z-index: -1; 
           transition:transform 300ms ease-out;
+        }
+        
+        &:hover, &:focus {
+          color:white;
         }
 
         &:hover:after, &:focus:after  {
@@ -188,12 +200,16 @@ const Header: React.FC<Props> = ({mobile, visible, toggleVisibility}) => {
         <ul>
           <li>
             <Link to={'/work'}>
+              <Text variant="label">
                 Work
+              </Text>
             </Link>
           </li>
           <li>
             <Link to={'/about'}>
+              <Text variant="label">
                 About
+              </Text>
             </Link>
           </li>
         </ul>
