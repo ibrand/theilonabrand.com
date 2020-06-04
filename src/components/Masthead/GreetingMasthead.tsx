@@ -28,7 +28,7 @@ const GreetingMasthead: React.FunctionComponent<IGreetingMastheadProps> = ({clas
       <Heading variant="header" textAlign="left" fontSize={[3, 4]} mb={2}>Based in</Heading>
         <Heading
           fontSize={[3, 3, 5]} textAlign="left" variant="header">
-          New york city
+          Minneapolis
       </Heading>
     </Box>
   </section>
