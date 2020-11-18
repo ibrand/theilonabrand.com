@@ -17,10 +17,10 @@ const GreetingMasthead: React.FunctionComponent<IGreetingMastheadProps> = ({clas
       </Heading>
     </Box>
     <Box mb={4}>
-      <Heading variant="header" textAlign="left" fontSize={[4, 5, 6]}>Current roles</Heading>
+      <Heading variant="header" textAlign="left" fontSize={[4, 5, 6]}>Current role:</Heading>
       <Heading
         fontSize={[2, 4, 5]} textAlign="left" variant="header">
-        Software Engineer<a href={"http://front.moveon.org/"}></a> at MoveOn.org
+        Software Engineer at <a href={"http://front.moveon.org/"}>MoveOn.org</a>
       </Heading>
     </Box>
     <Box mb={4}>
