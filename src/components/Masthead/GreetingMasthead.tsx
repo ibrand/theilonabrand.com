@@ -20,8 +20,7 @@ const GreetingMasthead: React.FunctionComponent<IGreetingMastheadProps> = ({clas
       <Heading variant="header" textAlign="left" fontSize={[4, 5, 6]}>Current roles</Heading>
       <Heading
         fontSize={[2, 4, 5]} textAlign="left" variant="header">
-        Community Manager of <a href={"https://github.com/MoveOnOrg/Spoke"}>Spoke</a> with MoveOn.org <br />
-        Director of <a href={"https://progressivehacknight.org/"}>Progressive HackNight</a> <br/>
+        Software Engineer<a href={"http://front.moveon.org/"}></a> at MoveOn.org
       </Heading>
     </Box>
     <Box mb={4}>
